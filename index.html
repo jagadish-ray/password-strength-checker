@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h2>Password Strength Testing Tool</h2>
+    <div class="input-area">
+      <input type="password" id="password" maxlength="20" placeholder="Enter password" oninput="checkPassword()" />
+         <span id="toggle" onclick="togglePassword()">👁️</span>
+    </div>
+    <div class="bar-container">
+      <div id="strengthBar"></div>
+    </div>
+
+    <div class="details">
+  <p>Length: <span id="length">0</span></p>
+  <p>Password must include:</p>
+  <div class="checks">
+    <span id="lower" class="criteria">❌ Lower Case</span>
+    <span id="upper" class="criteria">❌ Upper Case</span>
+    <span id="number" class="criteria">❌ Number</span>
+    <span id="symbol" class="criteria">❌ Symbols</span>
+  </div>
+</div>
+
+    <div class="time">
+      <p>Time to crack your password:<br><strong id="timeToCrack">0 seconds</strong></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
