@@ -93,7 +93,7 @@ function checkPassword() {
     width = "80%";
     color = "#80cc00"; // Lime green
   }
-  if (strength === 4 && length >= 14) {
+  if (strength === 4 && length >= 12) {
     width = "100%";
     color = "green"; // Very Strong
   }
